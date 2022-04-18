@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- script file added here -->
+    <script src="script.js" ></script>
+
+    <!-- for Styling -->
+    <style>
+        
+        input[type='button']
+        {
+            background-color: grey;
+            color: black;
+            border: solid black 2px;
+            width: 100%;            
+        }
+        input[type='text']
+        {
+            background-color: white;
+            border: solid black 2px;
+            width: 100%;
+        }
+    </style>
+    
+</head>
+
+<body>
+    <center>
+        <h1>Navgurukul Calculator</h1>
+    
+    <table border="1">
+        <tr>
+            <td colspan="3"><input type="text" id="result" /></td>
+            <td><input type="button" value="c" onclick="clr()" /> </td>
+            <!-- clr() function will call clr to clear all value -->
+        </tr>
+        <tr>
+            <!-- create button and assign value to each button 
+            -->
+            <!-- display("1") will call function display to display value -->
+            <td><input type="button" value="1" onclick="view('1')" /> </td>
+            <td><input type="button" value="2" onclick="view('2')" /> </td>
+            <td><input type="button" value="3" onclick="view('3')" /> </td>
+            <td><input type="button" value="/" onclick="view('/')" /> </td>
+        </tr>
+
+        <tr>
+            <!-- Add the buttons in different td's for display 4,5,6,-(subtraction) 
+            and use the function display and understand what to pass as
+            a parameter and why
+            -->
+            <td><input type="button" value="4" onclick="view('4')" /> </td>
+            <td><input type="button" value="5" onclick="view('5')" /> </td>
+            <td><input type="button" value="6" onclick="view('6')" /> </td>
+            <td><input type="button" value="*" onclick="view('-')" /> </td>
+        </tr>
+        <tr>
+            <!-- Add the buttons in different td's for display 7,8,9,+(Addition) 
+            and use the function display and understand what to pass as
+            a parameter and why
+            -->
+            <td><input type="button" value="7" onclick="view('7')" /> </td>
+            <td><input type="button" value="8" onclick="view('8')" /> </td>
+            <td><input type="button" value="9" onclick="view('9')" /> </td>
+            <td><input type="button" value="-" onclick="view('+')" /> </td>
+        </tr>
+        <tr>
+            <!-- Add the buttons in different td's for display point(.),0,*,=(equal to) 
+            and use the function display and understand what to pass as
+            a parameter and why. And for equal to (=) you need to give to the solve function
+            -->
+            <td><input type="button" value="." onclick="view('.')" /> </td>
+            <td><input type="button" value="0" onclick="view('0')" /> </td>
+            <td><input type="button" value="*" onclick="view('*')" /> </td>
+            <td><input type="button" value="=" onclick="compute()" /> </td>
+        </tr>
+    </table>
+    </center>
+
+</body>
